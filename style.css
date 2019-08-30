@@ -1,0 +1,20 @@
+.header-site {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.main-menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-menu__item {
+    text-decoration: none;
+    color: black;
+}
+
+ri
