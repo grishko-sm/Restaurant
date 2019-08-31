@@ -1,20 +1,152 @@
-.header-site {
+:root {
+    --base-background-color: white;
+    --temp-background-color: #a3f3f3;
+    --page-max-width: 1440px;
+    --nav-color: #ffffff;
+    --first-page-color: #ffffff;
+}
+
+.body {
+    background-color: var(--base-background-color);
+    margin: 0;
+}
+
+.page-wrap {
+    max-width: var(--page-max-width);
+    margin: 0 auto;
+}
+
+
+/* Общие текстовые стили */
+
+.header-text {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header-text-small {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.base-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/* Стили первого экрана */
+
+.page-first {
+    background-image: url(../img/first-page-bg.png);
     display: flex;
+    width: 100%;
+    height: 100vh;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
+    color: var(--first-page-color);
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu::after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/helm.svg);
+    left: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 .main-menu__list {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .main-menu__item {
+    display: block;
     text-decoration: none;
-    color: black;
+    color: var(--nav-color);
+    text-transform: uppercase;
+    width: 133px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
 }
 
-ri
+.head-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-line {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.button-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-item {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.rigth-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.facebook {
+    background-image: url(../img/fb.png);
+}
+
+.twitter {
+    background-image: url(../img/tw.png);
+}
+
+.instagram {
+    background-image: url(../img/instagram.png);
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* стили второго экрана */
+
+.page-second {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-content {
+    width: 50%;
+}
+
+.rigth-content {
+    width: 50%;
+}
