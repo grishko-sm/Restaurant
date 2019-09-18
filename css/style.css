@@ -1,67 +1,26 @@
+@import url(text-style.css);
+
+/* подключаем текстовые стили */
+
 :root {
     --base-background-color: white;
+    --first-backgropund-color: #887f7f;
     --temp-background-color: #a3f3f3;
     --page-max-width: 1440px;
     --nav-color: #ffffff;
     --first-page-color: #ffffff;
 }
 
-@font-face {
-    font-family: 'Banny Round';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Banny Round'), url('../font/Banny-Round.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Banny Light Round';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Banny Light Round'), url('../font/Banny-LightRound.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Banny Bold Round';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Banny Bold Round'), url('../font/Banny-BoldRound.woff') format('woff');
-}
-
 body {
-    background-color: var(--base-background-color);
+    background-color: #887f7f;
     margin: 0;
+    width: 100%;
 }
 
 .page-wrap {
     max-width: var(--page-max-width);
+    min-width: 320px;
     margin: 0 auto;
-}
-
-
-/* Общие текстовые стили */
-
-.header-text {
-    font-family: 'Banny Round';
-    font-size: 96px;
-    line-height: 0px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.header-text-small {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 28px;
-}
-
-.base-text {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
 }
 
 
@@ -72,8 +31,7 @@ body {
     position: relative;
     display: flex;
     width: 100%;
-    height: 100vh;
-    min-height: 800px;
+    height: 800px;
     flex-direction: column;
     align-items: center;
     color: var(--first-page-color);
@@ -113,11 +71,6 @@ body {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 12px;
     box-sizing: border-box;
 }
 
@@ -140,13 +93,8 @@ body {
 
 .left-text::after {
     content: 'Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM';
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 12px;
     transform-origin: 81% 0;
-    transform: translateX(-50%) rotate(-90deg);
+    transform: translateX(-50%) translateY(40%) rotate(-90deg);
 }
 
 .center-text {
@@ -154,6 +102,7 @@ body {
     flex: 170 170 0;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     box-sizing: border-box;
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -161,14 +110,33 @@ body {
     align-items: stretch;
 }
 
-.first-line {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-    padding-top: 226px;
-    margin: 0;
+.center-text-fl {
+    position: relative;
+}
+
+.center-text-fl::after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: calc(100% - 103px);
+    top: 103px;
+    transform: translateX(-50%);
+}
+
+.restaurant-name {
+    position: relative;
+}
+
+.restaurant-name::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background-color: #E8C300;
+    border-radius: 50px;
+    right: 50%;
+    top: 69px;
+    transform: translateX(50%);
 }
 
 .button-block {
@@ -178,19 +146,21 @@ body {
     justify-content: center;
 }
 
+.button-block::after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 60px;
+    transform: translateX(-50%);
+}
+
 .button-item {
     display: flex;
     width: 200px;
     height: 60px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 20px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--nav-color);
 }
 
 .button-01 {
@@ -208,12 +178,33 @@ body {
 
 .page-down {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 60px;
     height: 60px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 60px;
+    margin: 74px auto;
+    box-sizing: border-box;
+}
+
+.page-down::after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 74px;
+    transform: translateX(-50%);
+    top: -74px;
+}
+
+.page-down::before {
+    content: "";
+    position: absolute;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 73px;
+    transform: translateX(-50%);
+    top: 59px;
 }
 
 .button-page-down {
@@ -221,6 +212,11 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 40px;
+    box-sizing: border-box;
+}
+
+.button-page-down img {
+    margin-top: 15px;
 }
 
 .rigth-text {
@@ -256,15 +252,57 @@ body {
 
 /* стили второго экрана */
 
-.page-second {
+.page-white {
     display: flex;
     flex-direction: row;
+    background-color: var(--base-background-color);
 }
 
 .left-content {
     width: 50%;
+    box-sizing: border-box;
+    padding-left: 5.55%;
+    padding-right: 2.78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-content>p {
+    padding: 0;
+    margin: 0;
 }
 
 .rigth-content {
     width: 50%;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.img-wrap-rigth {
+    position: relative;
+    width: 575px;
+    height: 575px;
+}
+
+.img-wrap-rigth::after {
+    content: '';
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    right: -75px;
+    top: 162px;
+}
+
+.team-page {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/team-page-bg.png);
+    width: 100%;
+    height: 675px;
 }

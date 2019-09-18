@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Banny Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Round'), url('../font/Banny-Round.woff') format('woff');
+}
+
+
+/* @font-face {
+    font-family: 'Banny Light Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Light Round'), url('../font/Banny-LightRound.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Banny Bold Round';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Banny Bold Round'), url('../font/Banny-BoldRound.woff') format('woff');
+} */
+
+
+/* стили текста */
+
+
+/* пункты меню */
+
+.text-main-menu-item--white {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.text-main-menu-item--gray {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #333333;
+    ;
+}
+
+
+/* заголовки страниц */
+
+.text-title-page--white {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.text-title-page--black {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+/* название ресторана */
+
+.text-big-header {
+    font-family: 'Banny Round';
+    font-size: 96px;
+    line-height: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/* заголовки секций */
+
+.text-section-header--black {
+    font-family: 'Banny Round';
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #000000;
+    position: relative;
+    text-align: center;
+}
+
+.text-section-header--white {
+    font-family: 'Banny Round';
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+}
+
+.text-section-header--white::after,
+.text-section-header--black::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background-color: #E8C300;
+    border-radius: 50px;
+    right: 50%;
+    top: 51px;
+    transform: translateX(50%);
+}
+
+
+/* малые информационные надписи */
+
+.text-work-and-info--white {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+.text-work-and-info--gray {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.text-work-and-info--white-50 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* выделенный основной текст */
+
+.text-base-first-line--white {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.text-base-first-line--black {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    text-align: center;
+}
+
+
+/* основной текст */
+
+.text-base--white {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.text-base--black {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+}
+
+
+/* текст кнопок */
+
+.text-in-button {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/* текст полей ввода */
+
+.text-in-input {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+
+/* стили меню блюд */
+
+
+/* название блюда*/
+
+.text-dish-name {
+    font-family: 'Banny Round';
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333;
+}
+
+
+/* комментарий к блюду */
+
+.text-dish-comment {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #333333;
+}
