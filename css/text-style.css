@@ -34,6 +34,8 @@
     line-height: 18px;
     text-transform: uppercase;
     color: white;
+    padding: 0;
+    margin: 0;
 }
 
 .text-main-menu-item--gray {
@@ -44,7 +46,8 @@
     line-height: 18px;
     text-transform: uppercase;
     color: #333333;
-    ;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -58,6 +61,8 @@
     line-height: 14px;
     text-transform: uppercase;
     color: white;
+    padding: 0;
+    margin: 0;
 }
 
 .text-title-page--black {
@@ -68,6 +73,8 @@
     line-height: 14px;
     text-transform: uppercase;
     color: black;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -76,10 +83,11 @@
 .text-big-header {
     font-family: 'Banny Round';
     font-size: 96px;
-    line-height: 0px;
     text-align: center;
     text-transform: uppercase;
     color: white;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -93,6 +101,8 @@
     color: #000000;
     position: relative;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .text-section-header--white {
@@ -103,6 +113,8 @@
     color: #ffffff;
     position: relative;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .text-section-header--white::after,
@@ -116,6 +128,8 @@
     right: 50%;
     top: 51px;
     transform: translateX(50%);
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -128,6 +142,8 @@
     font-size: 12px;
     line-height: 12px;
     color: #FFFFFF;
+    padding: 0;
+    margin: 0;
 }
 
 .text-work-and-info--gray {
@@ -137,6 +153,8 @@
     font-size: 12px;
     line-height: 12px;
     color: rgba(51, 51, 51, 0.5);
+    padding: 0;
+    margin: 0;
 }
 
 .text-work-and-info--white-50 {
@@ -146,6 +164,8 @@
     font-size: 12px;
     line-height: 12px;
     color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -159,6 +179,8 @@
     line-height: 28px;
     color: #FFFFFF;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .text-base-first-line--black {
@@ -169,6 +191,8 @@
     line-height: 28px;
     color: #000000;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -182,6 +206,8 @@
     line-height: 24px;
     color: #FFFFFF;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .text-base--black {
@@ -192,6 +218,8 @@
     line-height: 24px;
     color: #000000;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -205,6 +233,8 @@
     line-height: 20px;
     text-transform: uppercase;
     color: white;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -217,6 +247,8 @@
     font-size: 14px;
     line-height: 19px;
     color: rgba(51, 51, 51, 0.5);
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -230,6 +262,8 @@
     font-size: 18px;
     line-height: 18px;
     color: #333333;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -242,4 +276,6 @@
     font-size: 12px;
     line-height: 12px;
     color: #333333;
+    padding: 0;
+    margin: 0;
 }
